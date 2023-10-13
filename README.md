@@ -4,16 +4,16 @@
 • Pentru stilizare am folosit Tailwind. <br/>
 • Pentru extragerea datelor am folosit libraria de Node.js Puppeteer. <br/>
 ## Rularea aplicatiei
-Pentru rularea aplicatiei trebuie urmati urmatorii pasi:
-• Atat pentru partea de client, cat si pentru partea de server, folosind in cmd comenzile cd server, respectiv cd gui, trebuie sa instalam pachetele necesare prin comanda npm install.
-• Dupa acest prim pas, pe parte de server rularea se face cu comanda nodemon server.js, iar pe partea de client cu comanda npm start.
+Pentru rularea aplicatiei trebuie urmati urmatorii pasi:<br/>
+• Atat pentru partea de client, cat si pentru partea de server, folosind in cmd comenzile cd server, respectiv cd gui, trebuie sa instalam pachetele necesare prin comanda npm install.<br/>
+• Dupa acest prim pas, pe parte de server rularea se face cu comanda nodemon server.js, iar pe partea de client cu comanda npm start.<br/>
 ## Descrierea aplicației
 • Aplicatia are ca scop extragerea de date in format JSON de pe site-ul https://wsa-test.vercel.app/ asemanator unui blog. Utilizatorul introduce numele site-ului in casuta de cautare, apasa butonul Search si ii sunt returnate diferite informatii despre postarile de pe blog (titlu, descriere scurta, imagine, href, descriere lunga, numarul de cuvinte din postare, sentimentul general al postarii.<br/>
 ![image](https://github.com/denisa-iordache/Web_scraper/assets/74931542/e302260f-890f-40cd-ab42-4fddca0e6995)
 • Exista posibilitatea ca dupa introducerea site-ului in caseta text, utilizatorul sa poata primi date doar pentru o anumita postare. Acest lucru se face prin adaugarea la numele site-ului a titlului postarii.<br/>
 ![image](https://github.com/denisa-iordache/Web_scraper/assets/74931542/4c69a01c-3a36-4ddd-8d87-53aca7c78502)
 • Ultima optiune este aceea de descarcare a unui fisier JSON cu rezultatul generat, acest lucru fiind posibil prin apasarea butonului Download JSON.<br/>
-![image](https://github.com/denisa-iordache/Web_scraper/assets/74931542/590e1597-10b7-4097-9148-8644523a7116)
+![image](https://github.com/denisa-iordache/Web_scraper/assets/74931542/590e1597-10b7-4097-9148-8644523a7116)<br/>
 ## Explicatii
 • Din cele spuse mai sus, se poate observa ca exista doua endpoint-uri API, unul pentru generarea detaliilor despre toate postarile si unul pentru o postare la alegere. Pentru a realiza acest lucru, pe partea de backend exista pagina apiRoutes.js unde prin metoda GET extrag informatiile returnate prin scraping.<br/>
 ![image](https://github.com/denisa-iordache/Web_scraper/assets/74931542/3d9c7f9c-de24-4fce-9fe9-0fe6b8b92a3a)<br/>
