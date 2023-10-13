@@ -6,7 +6,7 @@
 ## Rularea aplicatiei
 Pentru rularea aplicatiei trebuie urmati urmatorii pasi:<br/><br/>
 • Atat pentru partea de client, cat si pentru partea de server, folosind in cmd comenzile cd server, respectiv cd gui, trebuie sa instalam pachetele necesare prin comanda npm install.<br/><br/>
-• Dupa acest prim pas, pe parte de server rularea se face cu comanda nodemon server.js, iar pe partea de client cu comanda npm start.<br/><br/>
+• Dupa acest prim pas, pe partea de server rularea se face cu comanda nodemon server.js, iar pe partea de client cu comanda npm start.<br/><br/>
 ## Descrierea aplicației
 • Aplicatia are ca scop extragerea de date in format JSON de pe site-ul https://wsa-test.vercel.app/ asemanator unui blog. Utilizatorul introduce numele site-ului in casuta de cautare, apasa butonul Search si ii sunt returnate diferite informatii despre postarile de pe blog (titlu, descriere scurta, imagine, href, descriere lunga, numarul de cuvinte din postare, sentimentul general al postarii.<br/>
 ![image](https://github.com/denisa-iordache/Web_scraper/assets/74931542/e302260f-890f-40cd-ab42-4fddca0e6995)
