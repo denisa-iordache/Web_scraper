@@ -6,7 +6,7 @@ router.get('/', async (req, res) => {
         const result = await posts.getData()
         res.json(result)
     } catch (e) {
-        next(err);
+        next(e);
     }
 })
 
@@ -16,7 +16,7 @@ router.get('/:title', async (req, res) => {
         res.json(result
             .filter(p => p.title === req.params.title))
     } catch (e) {
-        next(err);
+        next(e);
     }
 })
 
