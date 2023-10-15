@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const posts = require("./scrape");
 
-router.get('/', async (req, res) => {
+router.get('/', async (req, res, next) => {
     try {
         const result = await posts.getData()
         res.json(result)
@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     }
 })
 
-router.get('/:title', async (req, res) => {
+router.get('/:title', async (req, res, next) => {
     try {
         const result = await posts.getData()
         res.json(result
